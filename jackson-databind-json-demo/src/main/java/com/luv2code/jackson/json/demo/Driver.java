@@ -18,7 +18,18 @@ try {
 	
 	//prinr firstname and last name
 	System.out.println("Last name= " + theStudent.getLastName());
-	System.out.println("First name= " + theStudent.getFirstName());
+	System.out.println("City= " + theStudent.getFirstName());
+	
+	//print out address
+	Address tempAddress=theStudent.getAddress();
+	System.out.println("Street= " +tempAddress.getStreet());
+	System.out.println("Street= " +tempAddress.getCity());
+	
+	//print the languages
+	for(String tempLang: theStudent.getLanguages()) {
+		System.out.println(tempLang);
+	}
+	
 } catch(Exception exc) {
 	exc.printStackTrace();
 }
