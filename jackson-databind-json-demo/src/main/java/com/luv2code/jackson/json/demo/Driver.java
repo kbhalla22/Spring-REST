@@ -14,7 +14,7 @@ try {
 	
 	//read JSON file and map/convert it to Java POJO:
 	//data/sample-lite.json name
-	Student theStudent=mapper.readValue(new File("data/sample-lite.json"), Student.class);
+	Student theStudent=mapper.readValue(new File("data/sample-full.json"), Student.class);
 	
 	//prinr firstname and last name
 	System.out.println("Last name= " + theStudent.getLastName());

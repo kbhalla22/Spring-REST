@@ -5,6 +5,20 @@ private int id;
 private String firstName;
 private String lastName;
 private boolean active;
+private Address address;
+private String[] languages;
+public String[] getLanguages() {
+	return languages;
+}
+public void setLanguages(String[] languages) {
+	this.languages = languages;
+}
+public Address getAddress() {
+	return address;
+}
+public void setAddress(Address address) {
+	this.address = address;
+}
 public int getId() {
 	return id;
 }
